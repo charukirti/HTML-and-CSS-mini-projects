@@ -1,0 +1,160 @@
+/* font-families */
+/* font-family: 'Merriweather', serif; */
+/* font-family: 'Mulish', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1b2b5c;
+  --primary-font: "Merriweather", serif;
+  --secondary-font: "Mulish", sans-serif;
+}
+
+h2 {
+  font-size: 1.63rem;
+  font-weight: 900;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
+label {
+  font-size: 1.2rem;
+  line-height: 1em;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f1f4fd;
+}
+
+.container {
+  width: 40rem;
+  background: #ffffff;
+  height: 27rem;
+  padding: 3rem;
+  box-shadow: 0px 15px 25px -10px rgba(152, 168, 215, 0.38);
+  border-radius: 20px;
+}
+
+.checkbox-section {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.field-group {
+  width: 15rem;
+  padding-bottom: 20px;
+}
+
+.checkbox__field {
+  opacity: 0;
+}
+
+.checkbox__label {
+  position: relative;
+  padding-left: 22px;
+  cursor: pointer;
+}
+
+.checkbox__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 1px solid #000;
+}
+
+.checkbox__label::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 6px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #1b2b5c;
+  transition: 0.2s ease;
+}
+
+.checkbox__field:not(:checked) + .checkbox__label::after {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.checkbox__field:checked + .checkbox__label::after {
+  transform: rotate(35deg) scale(1);
+  opacity: 1;
+}
+
+textarea {
+  width: 75%;
+  height: 4rem;
+  margin-top: 1rem;
+  padding: 15px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-weight: 400;
+  border: 1px solid #e3e8f5;
+  border-radius: 5px;
+}
+
+textarea::placeholder {
+  color: #1b2b5c80;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 1rem;
+  width: 32rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  opacity: 0.7;
+  line-height: 15px;
+}
+
+.cta {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  font-family: var(--secondary-font);
+  color: #000;
+  background: #ebeffa;
+}
+
+button:nth-child(2) {
+  background: var(--primary-color);
+  color: #fff;
+}
