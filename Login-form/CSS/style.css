@@ -113,13 +113,3 @@ p {
   line-height: 27px;
   color: var(--primary-color);
 }
-
-
-/* ADDED STYLE FROM PULL REQUEST */
-.fa-solid{
-  position: relative;
-  margin-left: 280px;
-  margin-top: -50px;
-  color: black;
-  font-size: large;
-}

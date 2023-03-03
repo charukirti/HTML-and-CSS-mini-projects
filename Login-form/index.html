@@ -8,7 +8,6 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -21,12 +20,8 @@
       <h2>Log In</h2>
       <div class="form-container">
         <form action="">
-          <input type="email" placeholder="Enter email" required/>
-          <i class="fa-solid fa-envelope"></i>
-          <br>
-          <input type="password" placeholder="Enter  password" id="password" required/>
-          <i class="fa-solid fa-lock" id="togglePassword"></i>
-          <br>
+          <input type="email" placeholder="Enter email" />
+          <input type="password" placeholder="Enter  password" />
           <button>Log In</button>
         </form>
       </div>
@@ -44,19 +39,5 @@
       </div>
       <p>Can’t log in? ・Already have an account?</p>
     </main>
-
-    <script>
-      const togglePassword = document.querySelector("#togglePassword");
-          const password = document.querySelector("#password");
-  
-          togglePassword.addEventListener("click", function () {
-              // toggle the type attribute
-              const type = password.getAttribute("type") === "password" ? "text" : "password";
-              password.setAttribute("type", type);
-              
-              // toggle the icon
-              this.classList.toggle("fa-lock-open");
-          });
-    </script>
   </body>
 </html>
