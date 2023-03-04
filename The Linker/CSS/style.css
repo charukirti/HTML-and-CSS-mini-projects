@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-font: "Poppins", sans-serif;
+  --font-size-a: 1.2rem;
+  --font-size-h2: 1.3rem;
+  --font-size-p: 1.2rem;
+  --font-size-i: 2rem;
+
+  /* colors */
+  --link-color: rgb(0, 0, 0);
+  --color-h2: rgb(255, 107, 107);
+  --color-p: rgb(155, 89, 182);
+  --link-tile-bg: rgb(245, 246, 250);
+
+  /* icon-colors */
+  --icon-twitter: rgb(10, 189, 227);
+  --icon-instagram: rgb(239, 83, 80);
+  --icon-github: rgb(45, 52, 54);
+  --icon-hashnode: rgb(9, 132, 227);
+  --icon-linkedin: rgb(41, 128, 185);
+
+  /* drop-shadow-color */
+  --drop-shadow: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: var(--main-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 1.2rem;
+}
+
+header {
+  margin-top: 15px;
+  width: 75%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > img {
+  width: 25%;
+}
+
+header > h2 {
+  color: var(--color-h2);
+  font-size: var(--font-size-h2);
+}
+
+header > p {
+  color: var(--color-p);
+  font-size: var(--font-size-p);
+  text-align: center;
+}
+
+section {
+  width: 85%;
+  max-width: 668px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link-tile {
+  width: 100%;
+  height: 55px;
+  border-radius: 20px;
+  background-color: var(--link-tile-bg);
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  margin: 4px 8px;
+  font-size: var(--font-size-i);
+}
+
+.link-tile:nth-child(1) i {
+  color: var(--icon-twitter);
+}
+
+.link-tile:nth-child(2) i {
+  color: var(--icon-instagram);
+}
+
+.link-tile:nth-child(3) i {
+  color: var(--icon-github);
+}
+
+.link-tile:nth-child(4) i {
+  color: var(--icon-hashnode);
+}
+
+.link-tile:nth-child(5) i {
+  color: var(--icon-linkedin);
+}
+
+.link-tile:hover {
+  filter: drop-shadow(0px 5px 1px var(--drop-shadow));
+  transform: scale(1.05);
+}
+
+.link-tile > * {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.link-tile:hover > * {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 5px 1px var(--drop-shadow));
+}
+
+footer > p {
+  color: rgb(39, 60, 117);
+}
+
+footer > a {
+  font-size: 1.2rem;
+}
+
