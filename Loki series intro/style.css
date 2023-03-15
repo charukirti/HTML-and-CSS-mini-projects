@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  color: #ffffffda;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2d3436;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 30rem;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  transition: 0.3s all ease;
+}
+
+/* Animating each letter*/
+
+.letter-L {
+  animation: l 5s infinite;
+}
+
+.letter-O {
+  animation: o 5s infinite;
+}
+
+.letter-K {
+  animation: k 5s infinite;
+}
+
+.letter-I {
+  animation: i 5s infinite;
+}
+
+@keyframes l {
+  10% {
+    font-family: "Kumar One", cursive;
+  }
+  20% {
+    font-family: "Nabla", cursive;
+  }
+
+  30% {
+    font-family: "Noto Sans Bassa Vah", sans-serif;
+  }
+
+  40% {
+    font-family: "Press Start 2P", cursive;
+  }
+
+  50% {
+    font-family: "Henny Penny", cursive;
+  }
+
+  60% {
+    font-family: "Shantell Sans", cursive;
+  }
+
+  70% {
+    font-family: "Single Day", cursive;
+  }
+
+  80% {
+    font-family: "Rubik Iso", cursive;
+  }
+
+  90% {
+    font-family: "Amatic SC", cursive;
+  }
+
+  100% {
+    font-family: "Noto Sans Meroitic", sans-serif;
+  }
+}
+
+@keyframes o {
+  10% {
+    font-family: "Henny Penny", cursive;
+  }
+
+  20% {
+    font-family: "Shantell Sans", cursive;
+  }
+
+  30% {
+    font-family: "Noto Sans Meroitic", sans-serif;
+  }
+
+  40% {
+    font-family: "Amatic SC", cursive;
+  }
+
+  50% {
+    font-family: "Single Day", cursive;
+  }
+
+  60% {
+    font-family: "Nabla", cursive;
+  }
+
+  70% {
+    font-family: "Noto Sans Cuneiform", sans-serif;
+  }
+
+  80% {
+    font-family: "Press Start 2P", cursive;
+  }
+
+  90% {
+    font-family: "Rubik Iso", cursive;
+  }
+
+  100% {
+    font-family: "Kirang Haerang", cursive;
+  }
+}
+
+@keyframes k {
+  10% {
+    font-family: "Shantell Sans", cursive;
+  }
+
+  20% {
+    font-family: "Kirang Haerang", cursive;
+  }
+
+  30% {
+    font-family: "Henny Penny", cursive;
+  }
+
+  40% {
+    font-family: "Noto Sans Meroitic", sans-serif;
+  }
+
+  50% {
+    font-family: "Amatic SC", cursive;
+  }
+
+  60% {
+    font-family: "Single Day", cursive;
+  }
+
+  70% {
+    font-family: "Nabla", cursive;
+  }
+
+  80% {
+    font-family: "Noto Sans Cuneiform", sans-serif;
+  }
+
+  90% {
+    font-family: "Press Start 2P", cursive;
+  }
+
+  100% {
+    font-family: "Rubik Iso", cursive;
+  }
+}
+
+@keyframes i {
+  10% {
+    font-family: "Rubik Iso", cursive;
+  }
+
+  20% {
+    font-family: "Press Start 2P", cursive;
+  }
+
+  30% {
+    font-family: "Noto Sans Cuneiform", sans-serif;
+  }
+
+  40% {
+    font-family: "Nabla", cursive;
+  }
+
+  50% {
+    font-family: "Single Day", cursive;
+  }
+
+  60% {
+    font-family: "Amatic SC", cursive;
+  }
+
+  70% {
+    font-family: "Noto Sans Meroitic", sans-serif;
+  }
+
+  80% {
+    font-family: "Henny Penny", cursive;
+  }
+
+  90% {
+    font-family: "Kirang Haerang", cursive;
+  }
+
+  100% {
+    font-family: "Shantell Sans", cursive;
+  }
+}
