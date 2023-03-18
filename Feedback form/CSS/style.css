@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #e5e5e5;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Merriweather", serif;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #000000;
+}
+
+button {
+  padding: 1rem 3rem;
+  border: none;
+  background: #000;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem;
+  width: 32rem;
+  box-shadow: 6px 8px 0px #000000;
+  background: #ffff;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  outline: none;
+  border: 1px solid #bababa;
+  padding: 10px;
+}
+
+.checkbox-group > div {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-group label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
