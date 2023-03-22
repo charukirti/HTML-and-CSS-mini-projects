@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+
+
+.flip {
+  background-color: transparent;
+  width: 11rem;
+  height: 3rem;
+  line-height: 3rem;
+  perspective: 31rem;
+  border: none;
+}
+
+.inner-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.flip:hover .inner-content {
+  transform: rotateX(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1.2rem;
+}
+
+.front {
+  background: #0077ff;
+}
+
+.back {
+  background: #005fcc;
+  transform: rotateX(180deg);
+}
